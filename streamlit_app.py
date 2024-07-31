@@ -7,7 +7,7 @@ FASTAPI_URL = "http://127.0.0.1:8000/"
 # Function to send user input to FastAPI and get response
 def get_response_from_backend(prompt):
     try:
-        response = requests.post(FASTAPI_URL, params={"prompt": prompt})
+        response = requests.post(FASTAPI_URL, json={"prompt": prompt})
         response.raise_for_status()  # Raise an exception for HTTP errors
         return response.json().get("response", "Error: No response from backend")
     except requests.exceptions.RequestException as e:
