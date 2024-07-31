@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import requests
 
 # Show title and description.
 st.title("🍯 Your Beekeeping assistant 🐝")
