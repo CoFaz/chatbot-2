@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # FastAPI endpoint
-FASTAPI_URL = "http://127.0.0.1:8000/process"
+FASTAPI_URL = "http://127.0.0.1:8000/"
 
 # Function to send user input to FastAPI and get response
 def get_response_from_backend(prompt):
